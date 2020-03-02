@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>File Metadata Microservice</title>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<script defer src="/js/app.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="hero">
+				<h1>File Metadata Microservice</h1>
+			</header>
+			<div class="formGroup">
+				<form
+					action="/api/fileData"
+					class="formGroup__form"
+					method="POST"
+					enctype="multipart/form-data"
+				>
+					<h2 class="formGroup__tag">Please Upload A File</h2>
+					<input type="file" name="upfile" id="upfile" class="formGroup__input" />
+					<button class="formGroup__submit" type="submit">Upload</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
